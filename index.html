@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportadora - Controle de Frota</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Logística & Frota</h1>
+        <p>Monitoramento de Manutenção Preventiva</p>
+    </header>
+
+    <main class="container">
+        <section class="painel-registro">
+            <h2>Registrar Caminhão</h2>
+            <form id="form-frota">
+                <input type="text" id="placa" required placeholder="Placa (Ex: ABC-1234)">
+                <input type="text" id="modelo" required placeholder="Modelo (Ex: Volvo FH 540)">
+                <input type="number" id="km" min="0" required placeholder="Quilometragem Atual">
+                <button type="submit">Adicionar ao Monitoramento</button>
+            </form>
+        </section>
+
+        <section class="painel-monitoramento">
+            <h2>Status da Frota</h2>
+            <div id="lista-caminhoes" class="grid-frota">
+                <!-- Cards injetados via JS -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
